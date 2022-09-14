@@ -68,9 +68,6 @@ const limiter = rateLimit({
 
 app.use('/api', limiter);
 
-//Webhook Route As it has to come before express.json
-app.use('/api/v1/order/webhook', express.raw({ type: '*/*' }), orderRouter);
-//Parse incoming JSON data to use in req.body
 app.use(express.json());
 
 //Sanitisation against NoSQL Injection Queries and XSS Attacks

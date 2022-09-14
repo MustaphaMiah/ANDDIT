@@ -3,10 +3,10 @@ const dotenv = require('dotenv');
 
 dotenv.config({ path: './config.env' });
 
-process.on('uncaughtException', (err) => {
-  console.log('UNCAUGHTEXCEPTION');
-  process.exit(1);
-});
+// process.on('uncaughtException', (err) => {
+//   console.log('UNCAUGHTEXCEPTION');
+//   process.exit(1);
+// });
 
 const app = require('./app');
 
