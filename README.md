@@ -1,4 +1,5 @@
 # ANDDIT
+
 AndDigitals Reddit
 
-first commit
+first commit now by brunel
